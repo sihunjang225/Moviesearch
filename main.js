@@ -104,7 +104,7 @@ function getMovies(url) {
       showMovies(data.results);
     });
 }
-
+let a = document.getElementById("maintitle3")
 function showMovies(data) {
   main.innerHTML = "";
   data.forEach((movie) => {
@@ -124,12 +124,15 @@ function showMovies(data) {
     </div>
     </div>`;
     movieE1.onclick = () => {
-      alert(`영화 ID : "${id}"`)
-      location.href='/subindex.html';
+      alert("영화ID :"+id)
+      location.href=`subindex.html?id=${id}`
+      
     };
     main.appendChild(movieE1);
   });
 }
+
+
 
 function getColor(vote) {
   if (vote >= 8) {
@@ -152,3 +155,4 @@ form.addEventListener("submit", (e) => {
     getMovies(API_URL);
   }
 });
+
