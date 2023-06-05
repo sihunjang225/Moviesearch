@@ -124,9 +124,9 @@ function showMovies(data) {
     </div>
     </div>`;
     movieE1.onclick = () => {
-      alert(`영화 ID : "${id}"`);
+      alert(`영화 ID : "${id}"`)
+      location.href='/subindex.html';
     };
-
     main.appendChild(movieE1);
   });
 }
