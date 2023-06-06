@@ -30,27 +30,34 @@ function getMovies(){
     fetch(searchKey, options)
         .then(response => response.json())
         .then(response => {
+            console.log(response)
             let title = response.title
             let poster_path = response.poster_path
             let vote_average = response.vote_average
             let id = response.id
             let overview = response.overview
+            let tagline = response.tagline
+            let release_date = response.release_date
 
             console.log(title,id,vote_average,poster_path,overview)
             
             const movieE1 = document.createElement("div");
             movieE1.classList.add("movie");
-            movieE1.innerHTML = `
-            <img src="${imgUrl + poster_path}" alt="${title}"/>
-            <div class="movie-info">
-                <h3>${title}</h3>
-                <span class="${getColor(vote_average)}">${vote_average}</span>
-                </div>
-                <div class="overview">
-                <h3>Overview</h3>
-                ${overview}
-            </div>
-            </div>`;
+            movieE1.innerHTML = 
+                              `
+                              <div class="container py-4 mw-100 ">
+                                <div class="p-5 mb-4  rounded-3" id='card_main' >
+                                  <div class="col-md-3">
+                                    <img src="${imgUrl +  poster_path}" class="mw-100 rounded-3 " alt="${title}}">
+                                  </div>
+                                  <div class="col-md-7">
+                                    <h1 class="h1title">${title}</h1>
+                                    <p class="fs-2">${tagline} </p>
+                                    <p class="fs-2"> release_date : ${release_date} </p>
+                                    <p class="poverview">${overview}</p>
+                                  </div>
+                                </div>
+                              </div>`;
             submain.appendChild(movieE1);
             titleP.innerHTML=`${title}`
         })

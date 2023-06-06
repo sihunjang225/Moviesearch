@@ -5,7 +5,7 @@
 
 :root {
   --primary-color: #22254b;
-  --secondary-color: #373b69;
+  --secondary-color: #372b69;
 }
 
 body {
@@ -21,3 +21,26 @@ header {
   background-color: var(--secondary-color);
 }
 
+#maintitle2 {
+  font-weight: 500;
+  font-size: xxx-large;
+  color: white;
+}
+
+#card_main{
+  background-color:aliceblue;
+  display: flex;
+  justify-content: space-around;
+}
+.col-md-9{
+  text-align: justify;
+}
+
+.h1title {
+  font-size: 300%;
+}
+
+.poverview{
+  margin-top: 60px;
+  font-size: 200%;
+}
