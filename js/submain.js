@@ -45,7 +45,7 @@ function getMovies(){
             movieE1.classList.add("movie");
             movieE1.innerHTML = 
                               `
-                              <div class="container py-4 mw-100 ">
+                              <div class="container py-4 mw-100 "onclick="location.href='http://127.0.0.1:5500/index.html'"
                                 <div class="p-5 mb-4  rounded-3" id='card_main' >
                                   <div class="col-md-3">
                                     <img src="${imgUrl +  poster_path}" class="mw-100 rounded-3 " alt="${title}}">
