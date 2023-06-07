@@ -55,6 +55,7 @@ function getMovies(){
                                     <p class="fs-2">${tagline} </p>
                                     <p class="fs-2"> release_date : ${release_date} </p>
                                     <p class="poverview">${overview}</p>
+                                    <button onclick="location.href='http://127.0.0.1:5500/index.html'" ></button>
                                   </div>
                                 </div>
                               </div>`;
