@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/style/style.css" />
   </head>
   <body>
     <header>
-      <form id="form"></form>
-      <input type="text" placeholder="검색" id="search" class="search" />
+      <form id="form">
+        <div id="maintitle">
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            style="text-decoration: none"
+          >
+            <p id="maintitle2">HELLO CINEMA WORLD</p></a
+          >
+        </div>
+        <input type="text" placeholder="Search" id="search" class="search" />
+      </form>
     </header>
+    <div id="tags">
+    </div>
     <main id="main">
       <div class="movie">
         <img
@@ -20,7 +31,7 @@
         />
         <div class="movie-info">
           <h3>Movie Title</h3>
-          <span class="green">9.8</span>
+          <span class="green">평점</span>
         </div>
 
         <div class="overview">
@@ -36,7 +47,7 @@
         />
         <div class="movie-info">
           <h3>Movie Title</h3>
-          <span class="green">9.8</span>
+          <span class="green">평점</span>
         </div>
 
         <div class="overview">이곳에 영화 줄거리 표시</div>
@@ -49,12 +60,12 @@
         />
         <div class="movie-info">
           <h3>Movie Title</h3>
-          <span class="green">9.8</span>
+          <span class="green">평점</span>
         </div>
 
         <div class="overview">이곳에 영화 줄거리 표시</div>
       </div>
     </main>
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
